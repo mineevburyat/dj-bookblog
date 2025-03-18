@@ -11,3 +11,23 @@
 • установка базы данных PostgreSQL;
 • реализация полнотекстового поискового механизма с использованием
 Django и PostgreSQL.
+
+Приложение Django-taggit: https://github.com/jazzband/django-taggit.
+• ORM-менеджеры приложения Django-taggit: https://django-taggit.readthedocs.io/en/latest/api.html.
+• Взаимосвязи многие-ко-многим: https://docs.djangoproject.com/en/4.1/
+topics/db/examples/many_to_many/.
+• Встроенные в Django функции агрегирования: https://docs.djangoproject.
+com/en/4.1/topics/db/aggregation/.
+• Встроенные шаблонные теги и фильтры: https://docs.djangoproject.com/
+en/4.1/ref/templates/builtins/.
+• Написание конкретно-прикладных шаблонные тегов: https://docs.djangoproject.com/en/4.1/howto/custom-template-tags/.
+• Справочный материал по формату Markdown: https://daringfireball.net/
+projects/markdown/basics.
+• В строенный в Django фреймворк карт сайтов: https://docs.djangoproject.
+com/en/4.1/ref/contrib/sitemaps/.
+• В строенный в Django фреймворк сайтов Django: https://docs.djangoproject.com/en/4.1/ref/contrib/sites/.
+• В строенный в Django фреймворк синдикацированных новостных лент:
+https://docs.djangoproject.com/en/4.1/ref/contrib/syndication/.
+• Скачиваемые файлы PostgreSQL: https://www.postgresql.org/download/.
+• Возможности полнотекстового поиска в  PostgreSQL: https://www.postgresql.org/docs/14/textsearch.html.
+• Поддержка со стороны Django полнотекстового поиска PostgreSQL:
