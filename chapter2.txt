@@ -1,0 +1,29 @@
+Раскрываем
+использование канонических URL-адресов для моделей;
+• создание дружественных для поисковой оптимизации URL-адресов
+постов;
+• добавление постраничной разбивки в представление списка постов;
+• разработка представлений на основе классов;
+• отправка электронных писем с помощью Django;
+• использование форм Django, позволяющих делиться постами по элект
+ронной почте;
+• добавление комментариев к постам с использованием форм из моделей.
+
+
+Ресурсы
+Исходный код к  этой главе: https://github.com/PacktPublishing/Django4-by-example/tree/main/Chapter02.
+• Функции-утилиты для URL-адресов: https://docs.djangoproject.com/
+en/4.1/ref/urlresolvers/.
+• Конверторы путей URL-адресов: https://docs.djangoproject.com/en/4.1/
+topics/http/urls/#path-converters.
+• Встроенный в Django класс постраничной разбивки: https://docs.djangoproject.com/en/4.1/ref/paginator/.
+• Введение в представления на основе классов: https://docs.djangoproject.
+com/en/4.1/topics/class-based-views/intro/.
+• Отправка электронных писем с помощью Django: https://docs.djangoproject.com/en/4.1/topics/email/.
+• Типы полей формы в  Django: https://docs.djangoproject.com/en/4.1/ref/
+forms/fields/.
+• Работа с формами: https://docs.djangoproject.com/en/4.1/topics/forms/.
+• Создание форм из моделей: https://docs.djangoproject.com/en/4.1/topics/
+forms/modelforms/.
+• Модельные взаимосвязи многие-к-одному: https://docs.djangoproject.
+com/en/4.1/topics/db/examples/many_to_one/.
