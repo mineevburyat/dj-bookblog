@@ -1,0 +1,34 @@
+Следующие ниже ресурсы предоставляют дополнительную информацию,
+относящуюся к темам, затронутым в этой главе.
+• Исходный код к  этой главе: https://github.com/PacktPublishing/Django4-by-example/tree/main/Chapter01.
+• Библиотека Python venv для виртуальных сред: https://docs.python.org/3/
+library/venv.html.
+• Опции установки Django: https://docs.djangoproject.com/en/4.1/topics/install/.
+• Примечания к  релизу Django 4.0: https://docs.djangoproject.com/en/dev/
+releases/4.0/.
+• Примечания к  релизу Django 4.1: https://docs.djangoproject.com/en/4.1/
+releases/4.1/.
+Философия дизайна Django: https://docs.djangoproject.com/en/dev/misc/
+design-philosophies/.
+• Справочный материал по модельным полям Django: https://docs.djangoproject.com/en/4.1/ref/models/fields/.
+• Справочный материал по модельным индексам Django: https://docs.
+djangoproject.com/en/4.1/ref/models/indexes/.
+• Поддержка перечислений со стороны Python: https://docs.python.org/3/
+library/enum.html.
+• Перечисляемые типы моделей Django: https://docs.djangoproject.com/
+en/4.1/ref/models/fields/#enumeration-types.
+• Справочный материал по настроечным параметрам Django: https://docs.
+djangoproject.com/en/4.1/ref/settings/.
+• Встроенный в Django сайт администрирования: https://docs.djangoproject.com/en/4.1/ref/contrib/admin/.
+• Составление запросов с помощью встроенного в Django ORM-преобра
+зователя: https://docs.djangoproject.com/en/4.1/topics/db/queries/.
+• Встроенный в Django диспетчер URL-адресов: https://docs.djangoproject.
+com/en/4.1/topics/http/urls/.
+• Встроенные в  Django утилиты-резольверы URL-адресов: https://docs.
+djangoproject.com/en/4.1/ref/urlresolvers/.
+• Язык шаблонов Django: https://docs.djangoproject.com/en/4.1/ref/templates/language/.
+• Встроенные шаблонные теги и фильтры: https://docs.djangoproject.com/
+en/4.1/ref/templates/builtins/.
+Статические файлы для исходного кода к этой главе: https://github.com/
+PacktPublishing/Django-4-by-Example/tree/master/Chapter01/mysite/blog/
+static.
