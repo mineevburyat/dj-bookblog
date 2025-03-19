@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    {% block othercss %}
+    {% endblock %}
+</head>
+<body>
+    <div id="header">
+        <span class="logo"><a href="{% url 'account:login' %}">Bookmarks</a></span>
+        {% if request.user.is_authenticated %}
+        <ul class="menu">
+            <li {% if section == "dashboard" %}class="selected"{% endif %}>
+            <a href="{% url 'account:dashboard' %}">My dashboard</a>
+            </li>
+            <li {% if section == "images" %}class="selected"{% endif %}>
+            <a href="#">Images</a>
+            </li>
+            <li {% if section == "people" %}class="selected"{% endif %}>
+            <a href="#">People</a>
+            </li>
+            <li><a href="{% url 'blog:post_list' %}">Блог</a></li>
+            <li><a href="{% url 'account:password_change' %}">Сменить пароль</a></li>
+            <li><a href="{% url 'account:edit' %}">Редактировать профиль</a></li>
+            {% if request.user.is_staff %}
+            <li><a href="{% url 'admin:index' %}">Админка</a></li>
+            {% endif %}
+        </ul>
+        {% endif %}
+        <span class="user">
+        {% if request.user.is_authenticated %}
+        Hello {{ request.user.first_name|default:request.user.username }},
+        
+        <form action="{% url 'account:logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Log out</button>
+        </form>
+        {% else %}
+        <a href="{% url 'account:login' %}">Log-in</a>
+        {% endif %}
+        </span>
+        
+    </div>
+    {% if messages %}
+        <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">
+            {{ message|safe }}
+            <a href="#" class="close">x</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

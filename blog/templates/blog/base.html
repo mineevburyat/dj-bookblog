@@ -1,21 +1,15 @@
+{% extends 'base.html' %}
+
 {% load static %}
 {% load blog_tags %}
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>{% block title %}{% endblock %}</title>
+{% block othercss %}
     <link href="{% static 'css/blog.css' %}" rel="stylesheet">
-</head>
+{% endblock %}
 
-<body>
-    <header>
-        <p>
-            {% show_search_form %}
-        </p>
-    </header>
+{% block content %}
     <div id="content">
-        {% block content %}
+        {% block content_blog %}
         {% endblock %}
     </div>
     <div id="sidebar">
@@ -28,6 +22,7 @@
             Подписаться на RSS ленту
             </a>
         </p>
+        
         <h3>Последние посты</h3>
         {% show_latest_posts 3 %}
         <h3>Самые комментируемые посты</h3>
@@ -39,7 +34,9 @@
         </li>
         {% endfor %}
         </ul>
+        <h3>Поиск</h3>
+        <p>
+            {% show_search_form %}
+        </p>
     </div>
-</body>
-
-</html>
+{% endblock %}

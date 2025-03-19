@@ -2,7 +2,8 @@
 {% load blog_tags %}
 
 {% block title %}Блог{% endblock %}
-{% block content %}
+
+{% block content_blog %}
 <h1>Блог</h1>
 {% if tag %}
  <h2>Posts tagged with "{{ tag.name }}"</h2>
